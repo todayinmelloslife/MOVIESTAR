@@ -1,0 +1,22 @@
+body {
+  background: #000;
+}
+
+nav {
+  position: relative;
+}
+
+nav #logo {
+  width: 50px;
+}
+
+nav #moviestar-title {
+  position: absolute;
+  color: #fff;
+  bottom: -2px;
+  font-size: 30px;
+  left: 55px;
+  font-weight: bolder;
+}
+
+

@@ -6,6 +6,10 @@ nav {
   position: relative;
 }
 
+#main-navbar {
+  background-color: #121212;
+}
+
 nav #logo {
   width: 50px;
 }
@@ -18,5 +22,28 @@ nav #moviestar-title {
   left: 55px;
   font-weight: bolder;
 }
+
+#search-form {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 180px;
+}
+
+#search-form .form-control {
+  border: none;
+  width: 90%;
+}
+
+#main-navbar {
+  min-width: 30%;
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
 
 

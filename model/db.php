@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$db_name = "moviestar";
+$db_name = "MOVIESTAR";
 $db_host = "localhost";
 $db_user = "root";
 $db_pass = "";

@@ -56,15 +56,8 @@ $flashMessage = [];
     </nav>
   </header>
 
-  <?php if(!empty($flashMessage["msg"])) :  ?>
+<?php if(!empty($flassMessage["msg"])): ?>
     <div class="msg-container">
-      <div class="msg">
-        <?= $flashMessage["msg"] ?>
-      </div>
+      <p class="msg <?= $flassMessage["type"] ?>"><?= $flassMessage["msg"] ?></p>
     </div>
   <?php endif; ?>
-  
-    <div class="msg-container">
-    <p class="msg">testando emnsagem...</p>
-  </div>
-  

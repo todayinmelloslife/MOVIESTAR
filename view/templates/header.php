@@ -1,8 +1,8 @@
-
 <?php
 require_once(__DIR__ . '/../../globals.php'); //SERVE OU PRA CARREGAR AS VARIAVEIS GLOBAIS
 require_once(__DIR__ . '/../../model/db.php'); // CONEXAO COM O BANCO DE DADOS
 
+$flashMessage = [];
 ?>
 
 
@@ -55,3 +55,16 @@ require_once(__DIR__ . '/../../model/db.php'); // CONEXAO COM O BANCO DE DADOS
       </div>
     </nav>
   </header>
+
+  <?php if(!empty($flashMessage["msg"])) :  ?>
+    <div class="msg-container">
+      <div class="msg">
+        <?= $flashMessage["msg"] ?>
+      </div>
+    </div>
+  <?php endif; ?>
+  
+    <div class="msg-container">
+    <p class="msg">testando emnsagem...</p>
+  </div>
+  

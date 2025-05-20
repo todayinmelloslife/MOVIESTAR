@@ -66,6 +66,7 @@
   padding: 10px;
   border: solid 1px #000;
   text-align: center;
+  color: #fff;
 }
 
 .msg.error {

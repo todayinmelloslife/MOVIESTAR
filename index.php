@@ -22,17 +22,30 @@ require_once('model/db.php'); // CONEXAO COM O BANCO DE DADOS
 
 </head>
 <body>
-  <header> 
-     <nav id="main-navbar" class="navbar-expand-lg">   
-          <a href="<?= $BASE_URL ?>" class="navbar-brand">
-          <img src="<?= $BASE_URL ?>view/img/logo.svg" alt="MovieStar" id="logo">
-          <span id="moviestar-title">MovieStar</span>
-     </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" 
-          data-target="#navbar" aria-constrols="navbar" aria-expanded= "false" aria-label="toggle navigation">
-          <i class= "fas fa-bars"></i>
-      </button> 
-          <!-- esse button serve para abrir o menu no mobile -->
+ <header>
+    <nav id="main-navbar" class="navbar navbar-expand-lg">
+      <a href="<?= $BASE_URL ?>" class="navbar-brand">
+        <img src="<?= $BASE_URL ?>view/img/logo.svg" alt="MovieStar" id="logo">
+        <span id="moviestar-title">MovieStar</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button> <!-- criei um botao que vai ser pra mobile, chique ne -->
+
+      <form action="" method="GET" id="search-form" class="form-inline my-2 my-lg-0">
+        <input
+          type="search"
+          name="q"
+          id="search"
+          class="form-control mr-sm-2"
+          placeholder="Pesquisar filme..."
+          aria-label="search"
+        >
+        <button class="btn my-2 my-sm-0" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
 
      </nav>
   </header>

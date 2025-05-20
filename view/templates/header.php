@@ -1,6 +1,7 @@
+
 <?php
-require_once('globals.php'); //SERVE OU PRA CARREGAR AS VARIAVEIS GLOBAIS
-require_once('model/db.php'); // CONEXAO COM O BANCO DE DADOS
+require_once(__DIR__ . '/../../globals.php'); //SERVE OU PRA CARREGAR AS VARIAVEIS GLOBAIS
+require_once(__DIR__ . '/../../model/db.php'); // CONEXAO COM O BANCO DE DADOS
 
 ?>
 
@@ -48,7 +49,7 @@ require_once('model/db.php'); // CONEXAO COM O BANCO DE DADOS
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="<?= $BASE_URL ?>auth.php" class="nav-link">Entrar  |  Cadastrar </a>
+            <a href="<?= $BASE_URL ?>view/templates/auth.php" class="nav-link">Entrar  |  Cadastrar</a>
           </li>
         </ul>
       </div>

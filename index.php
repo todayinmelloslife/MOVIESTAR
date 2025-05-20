@@ -16,7 +16,7 @@ require_once('model/db.php'); // CONEXAO COM O BANCO DE DADOS
     <!-- Bootstrap CSS only -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.css" integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS only -->
-    <link rel="stylesheet" href="<?= $BASE_URL ?>view/css/style.css">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>view/css/style.scss>
     <!-- Font Awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -32,12 +32,12 @@ require_once('model/db.php'); // CONEXAO COM O BANCO DE DADOS
         <i class="fas fa-bars"></i>
       </button> <!-- criei um botao que vai ser pra mobile, chique ne -->
 
-      <form action="" method="GET" id="search-form" class="form-inline my-2 my-lg-0">
+      <form action="" method="GET" id="search-form" class="d-flex my-2 my-lg-0">
         <input
           type="search"
           name="q"
           id="search"
-          class="form-control mr-sm-2"
+          class="form-control me-2"
           placeholder="Pesquisar filme..."
           aria-label="search"
         >
@@ -45,11 +45,45 @@ require_once('model/db.php'); // CONEXAO COM O BANCO DE DADOS
           <i class="fas fa-search"></i>
         </button>
       </form>
-
-
-     </nav>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="<?= $BASE_URL ?>auth.php" class="nav-link">Entrar  |  Cadastrar </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
+  
+  <div id="main-container" class="container-fluid">
+    <h1>Corpo do Site</h1>
+  </div>
 
+  <footer>
+    <div class="social-container">
+      <ul> 
+        <li>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="footer-links-container">
+      <ul>
+        <li><a href="<?= $BASE_URL ?>add_movie.php">Adicionar Filme</a></li>
+        <li><a href="<?= $BASE_URL ?>add_review.php">Adicionar Crítica</a></li>
+        <li><a href="<?= $BASE_URL ?>auth.php">Entrar</a></li>
+        <li><a href="<?= $BASE_URL ?>register.php">Registrar</a></li>
+      </ul>
+      <p class="copyright">&copy; 2025 No Pixel Wasted Desenvolvimento LTDA. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
 
      <!-- Bootstrap JS only -->
